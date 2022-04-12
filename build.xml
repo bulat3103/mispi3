@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<project name="Mispi3">
+    <property file="build.properties"/>
+
+    <path id="classpath.source">
+        <fileset dir="${lib.dir}" includes="**/*.jar"/>
+    </path>
+
+    <target name="compile">
+        <echo message="--- COMPILE DONE ---"/>
+        <mkdir dir="${compiled.classes}"/>
+        <mkdir dir="${compiled.tests}"/>
+        <javac srcdir="${main}" destdir="${compiled.classes}" includeantruntime="false">
+        </javac>
+        <javac srcdir="${test}" destdir="${compiled.tests}">
+        </javac>
+    </target>
+
+    <target name="build" depends="compile">
+        <echo message="--- BUILD DONE ---"/>
+        <jar destfile="${destination.jar}" basedir="${compiled.classes}" compress="false">
+            <manifest>
+                <attribute name="Main-Class" value="com.bebra.Main"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="clean">
+        <echo message="--- CLEAN DONE ---"/>
+        <delete dir="${compiled}"/>
+    </target>
+
+    <target name="test" depends="build">
+        <echo message="--- TEST DONE ---"/>
+        <junit fork="true" printsummary="on">
+
+        </junit>
+    </target>
+</project>
