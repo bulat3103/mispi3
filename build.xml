@@ -12,7 +12,7 @@
         <mkdir dir="${compiled.tests}"/>
         <javac srcdir="${main}" destdir="${compiled.classes}" includeantruntime="false">
         </javac>
-        <javac srcdir="${test}" destdir="${compiled.tests}">
+        <javac srcdir="${test}" destdir="${compiled.tests}" includeantruntime="false">
         </javac>
     </target>
 
@@ -33,7 +33,7 @@
     <target name="test" depends="build">
         <echo message="--- TEST DONE ---"/>
         <junit fork="true" printsummary="on">
-
+            <formatter type="xml"/>
         </junit>
     </target>
 </project>
