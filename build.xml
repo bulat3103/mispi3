@@ -11,8 +11,16 @@
         <mkdir dir="${compiled.classes}"/>
         <mkdir dir="${compiled.tests}"/>
         <javac srcdir="${main}" destdir="${compiled.classes}" includeantruntime="false">
+            <classpath>
+                <pathelement location="${compiled.classes}"/>
+                <path refid="classpath.source"/>
+            </classpath>
         </javac>
         <javac srcdir="${test}" destdir="${compiled.tests}" includeantruntime="false">
+            <classpath>
+                <pathelement location="${compiled.classes}"/>
+                <path refid="classpath.source"/>
+            </classpath>
         </javac>
     </target>
 
@@ -34,6 +42,14 @@
         <echo message="--- TEST DONE ---"/>
         <junit fork="true" printsummary="on">
             <formatter type="xml"/>
+            <classpath>
+                <path refid="classpath.source"/>
+                <pathelement location="${compiled.classes}"/>
+                <pathelement location="${compiled.tests}"/>
+            </classpath>
+            <batchtest todir="reports">
+                <fileset dir="${test}" includes="TestPoints.java"/>
+            </batchtest>
         </junit>
     </target>
 </project>

@@ -86,9 +86,7 @@ public class PointResult{
                 "x=" + x +
                 ", y=" + y +
                 ", r=" + r +
-                ", time='" + time + '\'' +
-                ", valid=" + valid +
                 ", hit=" + hit +
-                '}';
+                "}";
     }
 }
