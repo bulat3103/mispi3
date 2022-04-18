@@ -77,7 +77,7 @@
         </git>
         <git command="commit">
             <args>
-                <arg value="-am ${commit-message}" />
+                <arg value="-m ${commit-message}" />
             </args>
         </git>
         <git command="push" />
