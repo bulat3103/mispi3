@@ -40,7 +40,7 @@
 
     <target name="test" depends="build">
         <echo message="--- TEST DONE ---"/>
-        <junit fork="true" printsummary="on">
+        <junit fork="true" printsummary="on" haltonerror="on" haltonfailure="on">
             <formatter type="xml"/>
             <classpath>
                 <path refid="classpath.source"/>
