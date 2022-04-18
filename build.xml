@@ -7,7 +7,7 @@
     </path>
 
     <target name="compile">
-        <echo message="--- COMPILE DONE ---"/>
+        <echo message="--- COMPILE START ---"/>
         <mkdir dir="${compiled.classes}"/>
         <mkdir dir="${compiled.tests}"/>
         <javac srcdir="${main}" destdir="${compiled.classes}" includeantruntime="false">
@@ -22,24 +22,27 @@
                 <path refid="classpath.source"/>
             </classpath>
         </javac>
+        <echo message="--- COMPILE DONE ---"/>
     </target>
 
     <target name="build" depends="compile">
-        <echo message="--- BUILD DONE ---"/>
+        <echo message="--- BUILD START ---"/>
         <jar destfile="${destination.jar}" basedir="${compiled.classes}" compress="false">
             <manifest>
                 <attribute name="Main-Class" value="com.bebra.Main"/>
             </manifest>
         </jar>
+        <echo message="--- BUILD DONE ---"/>
     </target>
 
     <target name="clean">
-        <echo message="--- CLEAN DONE ---"/>
+        <echo message="--- CLEAN START ---"/>
         <delete dir="${compiled}"/>
+        <echo message="--- CLEAN DONE ---"/>
     </target>
 
     <target name="test" depends="build">
-        <echo message="--- TEST DONE ---"/>
+        <echo message="--- TEST START ---"/>
         <junit fork="true" printsummary="on" haltonerror="on" haltonfailure="on">
             <formatter type="xml"/>
             <classpath>
@@ -51,6 +54,15 @@
                 <fileset dir="${test}" includes="TestPoints.java"/>
             </batchtest>
         </junit>
+        <echo message="--- TEST DONE ---"/>
+    </target>
+
+    <target name="xml">
+        <echo message="--- XML VALIDATION START ---"/>
+        <xmlvalidate lenient="yes" warn="yes">
+            <fileset dir="." includes="**/*.xml"/>
+        </xmlvalidate>
+        <echo message="--- XML VALIDATION DONE ---"/>
     </target>
 
     <macrodef name="git">
@@ -67,7 +79,7 @@
     </macrodef>
 
     <target name="report" depends="test">
-        <echo message="--- REPORT DONE ---"/>
+        <echo message="--- REPORT START ---"/>
         <input message="Commit message" addproperty="commit-message" />
         <echo message="Commit all changes with message ${commit-message}" />
         <git command="add">
@@ -81,5 +93,6 @@
             </args>
         </git>
         <git command="push" />
+        <echo message="--- REPORT DONE ---"/>
     </target>
 </project>
