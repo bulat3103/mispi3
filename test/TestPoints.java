@@ -21,8 +21,8 @@ public class TestPoints {
     @Test
     public void topLeft() {
         double r = 2;
-        for (double x = -5; x <= 0; x += 0.01) {
-            for (double y = 0; y <= 3; y += 0.01) {
+        for (double x = -5; x < 0; x += 0.01) {
+            for (double y = 0.01; y < 3; y += 0.01) {
                 PointResult pointResult = controller.createPointResult(x, y, r);
                 assertEquals(pointResult.toString(), "PointResult{" + "x=" + x + ", y=" + y + ", r=" + r + ", hit=" + "false" + "}");
             }
@@ -66,7 +66,7 @@ public class TestPoints {
 
     @Test
     public void topRight() {
-        double r = 2;
+        double r = 3;
         for (double x = 0; x <= 3; x += 0.01) {
             for (double y = 0; y <= 3; y += 0.01) {
                 if (x * x + y * y <= 9) {
@@ -80,16 +80,16 @@ public class TestPoints {
     @Test
     public void borders() {
         PointResult pointResult = controller.createPointResult(0, 3, 3);
-        assertEquals(pointResult.toString(), "PointResult{" + "x=" + 0 + ", y=" + (double) 3 + ", r=" + (double) 3 + ", hit=" + "true" + "}");
+        assertEquals(pointResult.toString(), "PointResult{" + "x=" + (double) 0 + ", y=" + (double) 3 + ", r=" + (double) 3 + ", hit=" + "true" + "}");
 
         pointResult = controller.createPointResult(0, -3, 3);
-        assertEquals(pointResult.toString(), "PointResult{" + "x=" + 0 + ", y=" + (double) -3 + ", r=" + (double) 3 + ", hit=" + "true" + "}");
+        assertEquals(pointResult.toString(), "PointResult{" + "x=" + (double) 0 + ", y=" + (double) -3 + ", r=" + (double) 3 + ", hit=" + "true" + "}");
 
         pointResult = controller.createPointResult(3, 0, 3);
-        assertEquals(pointResult.toString(), "PointResult{" + "x=" + (double) 3 + ", y=" + 0 + ", r=" + (double) 3 + ", hit=" + "true" + "}");
+        assertEquals(pointResult.toString(), "PointResult{" + "x=" + (double) 3 + ", y=" + (double) 0 + ", r=" + (double) 3 + ", hit=" + "true" + "}");
 
         pointResult = controller.createPointResult(-3, 0, 3);
-        assertEquals(pointResult.toString(), "PointResult{" + "x=" + (double) -3 + ", y=" + 0 + ", r=" + (double) 3 + ", hit=" + "true" + "}");
+        assertEquals(pointResult.toString(), "PointResult{" + "x=" + (double) -3 + ", y=" + (double) 0 + ", r=" + (double) 3 + ", hit=" + "true" + "}");
     }
 
     @Test(expected = NullPointerException.class)

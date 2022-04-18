@@ -7,7 +7,10 @@ public class PointResultController {
 
     public PointResult createPointResult(double xValue, double yValue, double rValue) {
         boolean valid = validate(xValue, yValue, rValue);
-        boolean hit = valid && checkHit(xValue, yValue, rValue);
+        if (!valid) {
+            throw new NullPointerException();
+        }
+        boolean hit = checkHit(xValue, yValue, rValue);
         String time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
         return new PointResult(xValue, yValue, rValue, time, valid, hit);
     }
