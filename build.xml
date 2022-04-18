@@ -68,12 +68,18 @@
 
     <target name="report" depends="test">
         <echo message="--- REPORT DONE ---"/>
+        <input message="Commit message" addproperty="commit-message" />
+        <echo message="Commit all changes with message ${commit-message}" />
         <git command="add">
             <args>
                 <arg value="." />
             </args>
         </git>
-        <git command="commit"/>
+        <git command="commit">
+            <args>
+                <arg value="-am ${commit-message}" />
+            </args>
+        </git>
         <git command="push" />
     </target>
 </project>
