@@ -52,4 +52,28 @@
             </batchtest>
         </junit>
     </target>
+
+    <macrodef name="git">
+        <attribute name="command" />
+        <attribute name="dir" default="reports" />
+        <element name="args" optional="true" />
+        <sequential>
+            <echo message="git @{command}" />
+            <exec executable="git" dir="@{dir}">
+                <arg value="@{command}" />
+                <args/>
+            </exec>
+        </sequential>
+    </macrodef>
+
+    <target name="report" depends="test">
+        <echo message="--- REPORT DONE ---"/>
+        <git command="add">
+            <args>
+                <arg value="." />
+            </args>
+        </git>
+        <git command="commit"/>
+        <git command="push" />
+    </target>
 </project>
