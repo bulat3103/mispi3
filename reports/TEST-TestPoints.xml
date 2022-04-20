@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="LAPTOP-6KNO9QKU" name="TestPoints" skipped="0" tests="8" time="1.45" timestamp="2022-04-18T21:11:54">
+<testsuite errors="0" failures="0" hostname="DESKTOP-4JRPL5A" name="TestPoints" skipped="0" tests="8" time="2.502" timestamp="2022-04-20T11:09:07">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="lib.dir" value="lib" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
     <property name="os.name" value="Windows 10" />
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\classes" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes" />
     <property name="destination.jar" value="target/Mispi3.jar" />
     <property name="compiled.classes" value="target/classes" />
     <property name="compiled.tests" value="target/tests" />
     <property name="sun.desktop" value="windows" />
     <property name="java.vm.specification.vendor" value="Oracle Corporation" />
-    <property name="ant.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\lib\ant" />
+    <property name="ant.home" value="D:\IntelliJ IDEA 2020.3.2\lib\ant" />
     <property name="ant.file.type.Mispi3" value="file" />
-    <property name="java.runtime.version" value="1.8.0_261-b12" />
-    <property name="user.name" value="ASUS" />
+    <property name="java.runtime.version" value="1.8.0_201-b09" />
+    <property name="user.name" value="admin" />
     <property name="main" value="src/com/bebra" />
     <property name="user.language" value="ru" />
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin" />
     <property name="ant.project.name" value="Mispi3" />
-    <property name="java.version" value="1.8.0_261" />
+    <property name="java.version" value="1.8.0_201" />
     <property name="user.timezone" value="" />
     <property name="sun.arch.data.model" value="64" />
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\endorsed" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed" />
     <property name="sun.cpu.isalist" value="amd64" />
     <property name="sun.jnu.encoding" value="Cp1251" />
     <property name="file.encoding.pkg" value="sun.io" />
@@ -31,58 +31,58 @@
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="java.class.version" value="52.0" />
     <property name="user.country" value="RU" />
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_261\jre" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre" />
     <property name="java.vm.info" value="mixed mode" />
-    <property name="ant.file" value="C:\Users\ASUS\Desktop\второй курс\миспи\lab3\build.xml" />
+    <property name="ant.file" value="C:\Users\admin\IdeaProjects\mispi3\build.xml" />
     <property name="os.version" value="10.0" />
     <property name="path.separator" value=";" />
-    <property name="java.vm.version" value="25.261-b12" />
+    <property name="java.vm.version" value="25.201-b09" />
     <property name="user.variant" value="" />
-    <property name="ant.library.dir" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\lib\ant\lib" />
+    <property name="ant.library.dir" value="D:\IntelliJ IDEA 2020.3.2\lib\ant\lib" />
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
     <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="user.script" value="" />
-    <property name="user.home" value="C:\Users\ASUS" />
+    <property name="user.home" value="C:\Users\admin" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="test" value="test" />
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Program Files (x86)\HP\IdrsOCR_15.3.1129.0\;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\ASUS\flutter\bin;C:\Program Files\Git\cmd;C:\MinGW\bin;C:\Program Files\Apache\apache-ant-1.9.16\bin;C:\Users\ASUS\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\ASUS\AppData\Local\Programs\Python\Python310\;C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Users\ASUS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ASUS\AppData\Local\GitHubDesktop\bin;." />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\TortoiseSVN\bin;C:\apache-ant-1.10.12\bin;C:\Program Files\Git\cmd;C:\Users\admin\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\admin\AppData\Local\Programs\Python\Python38-32\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;C:\Users\admin\AppData\Roaming\npm;D:\WebStorm 2021.2.3\bin;;D:\CLion 2021.3.3\bin;;." />
     <property name="java.vendor.url" value="http://java.oracle.com/" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner TestPoints skipNonTests=false filtertrace=true haltOnError=true haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\ASUS\Desktop\второй курс\миспи\lab3\reports\TEST-TestPoints.xml crashfile=C:\Users\ASUS\Desktop\второй курс\миспи\lab3\junitvmwatcher8104452176522142067.properties propsfile=C:\Users\ASUS\Desktop\второй курс\миспи\lab3\junit7809641626411953208.properties" />
-    <property name="java.class.path" value="C:\Users\ASUS\Desktop\второй курс\миспи\lab3\lib\hamcrest-core-1.3.jar;C:\Users\ASUS\Desktop\второй курс\миспи\lab3\lib\junit-4.12.jar;C:\Users\ASUS\Desktop\второй курс\миспи\lab3\target\classes;C:\Users\ASUS\Desktop\второй курс\миспи\lab3\target\tests;C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\lib\ant\lib\ant-launcher.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\lib\ant\lib\ant.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\lib\ant\lib\ant-junit.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\lib\ant\lib\ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner TestPoints skipNonTests=false filtertrace=true haltOnError=true haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\admin\IdeaProjects\mispi3\reports\TEST-TestPoints.xml crashfile=C:\Users\admin\IdeaProjects\mispi3\junitvmwatcher7313138637704607831.properties propsfile=C:\Users\admin\IdeaProjects\mispi3\junit4259835553086406800.properties" />
+    <property name="java.class.path" value="C:\Users\admin\IdeaProjects\mispi3\lib\hamcrest-core-1.3.jar;C:\Users\admin\IdeaProjects\mispi3\lib\junit-4.12.jar;C:\Users\admin\IdeaProjects\mispi3\target\classes;C:\Users\admin\IdeaProjects\mispi3\target\tests;D:\IntelliJ IDEA 2020.3.2\lib\ant\lib\ant-launcher.jar;D:\IntelliJ IDEA 2020.3.2\lib\ant\lib\ant.jar;D:\IntelliJ IDEA 2020.3.2\lib\ant\lib\ant-junit.jar;D:\IntelliJ IDEA 2020.3.2\lib\ant\lib\ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.5 compiled on July 10 2018" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="ant.file.type" value="file" />
     <property name="java.vm.specification.version" value="1.8" />
     <property name="sun.cpu.endian" value="little" />
     <property name="sun.os.patch.level" value="" />
-    <property name="java.io.tmpdir" value="C:\Users\ASUS\AppData\Local\Temp\" />
+    <property name="java.io.tmpdir" value="C:\Users\admin\AppData\Local\Temp\" />
     <property name="compiled" value="target" />
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-    <property name="ant.file.Mispi3" value="C:\Users\ASUS\Desktop\второй курс\миспи\lab3\build.xml" />
+    <property name="ant.file.Mispi3" value="C:\Users\admin\IdeaProjects\mispi3\build.xml" />
     <property name="os.arch" value="amd64" />
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
-    <property name="user.dir" value="C:\Users\ASUS\Desktop\второй курс\миспи\lab3" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="C:\Users\admin\IdeaProjects\mispi3" />
     <property name="line.separator" value="&#xd;&#xa;" />
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
-    <property name="basedir" value="C:\Users\ASUS\Desktop\второй курс\миспи\lab3" />
+    <property name="basedir" value="C:\Users\admin\IdeaProjects\mispi3" />
     <property name="ant.java.version" value="1.8" />
-    <property name="ant.core.lib" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\lib\ant\lib\ant.jar" />
+    <property name="ant.core.lib" value="D:\IntelliJ IDEA 2020.3.2\lib\ant\lib\ant.jar" />
     <property name="file.encoding" value="Cp1251" />
     <property name="java.specification.version" value="1.8" />
     <property name="ant.project.invoked-targets" value="report" />
   </properties>
-  <testcase classname="TestPoints" name="topLeft" time="0.648" />
-  <testcase classname="TestPoints" name="topRight" time="0.246" />
-  <testcase classname="TestPoints" name="nullInPoint" time="0.001" />
+  <testcase classname="TestPoints" name="topLeft" time="1.126" />
+  <testcase classname="TestPoints" name="topRight" time="0.375" />
+  <testcase classname="TestPoints" name="nullInPoint" time="0.0" />
   <testcase classname="TestPoints" name="borders" time="0.0" />
   <testcase classname="TestPoints" name="nullRInPoint" time="0.0" />
-  <testcase classname="TestPoints" name="downLeftOutsideArea" time="0.186" />
-  <testcase classname="TestPoints" name="downRight" time="0.034" />
-  <testcase classname="TestPoints" name="downLeftInsideArea" time="0.283" />
+  <testcase classname="TestPoints" name="downLeftOutsideArea" time="0.401" />
+  <testcase classname="TestPoints" name="downRight" time="0.101" />
+  <testcase classname="TestPoints" name="downLeftInsideArea" time="0.359" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
